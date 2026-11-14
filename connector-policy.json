@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "name": "koskamo",
+  "title": "Koskamo",
+  "domain": "koskamo.com",
+  "auth": "none",
+  "toolExposure": "reviewed-allowlist"
+}

@@ -50,7 +50,9 @@ gemini extensions install https://github.com/empline/koskamo-mcp
 Restart an existing Gemini CLI session after installation. Run `/mcp` inside
 Gemini CLI to inspect the connection and available tools.
 
-## Try it
+## Capabilities and access
+
+### Try it
 
 - "Use Koskamo to find vendor-published MCP servers for developer documentation.
   Compare their transports, authentication requirements, and source links."
@@ -62,7 +64,7 @@ Koskamo returns candidate passages and source-attributed directory metadata.
 Check the returned citations, verification states, and timestamps; a similarity
 score ranks matches and is not a measure of factual confidence.
 
-## Example tools
+### Example tools
 
 | Tool | Purpose |
 | --- | --- |
@@ -90,6 +92,12 @@ Tool arguments are sent to Koskamo over HTTPS. Avoid sending secrets or private
 content to this public service. See [Privacy](https://koskamo.com/privacy),
 [Terms](https://koskamo.com/terms), and [connection documentation](https://koskamo.com/connect).
 
+## Tool exposure
+
+Policy: `reviewed-allowlist`. The manifest pins a reviewed tool allowlist. New tools require a reviewed manifest update. Inclusion does not grant scopes or approve actions.
+
+Authentication policy: `none`. The hosted endpoint is `https://koskamo.com/api/mcp`. No credentials or automatic tool approvals are bundled.
+
 ## Update or uninstall
 
 ```sh
@@ -97,7 +105,13 @@ gemini extensions update koskamo
 gemini extensions uninstall koskamo
 ```
 
-## Maintainers
+Pin `--ref <full-commit-sha>` when a reproducible installation is required.
+
+## Verification
+
+Run `npm ci --ignore-scripts` and `npm test`. The canonical JSON AST guard rejects metadata drift and duplicate keys; mutation tests prove refusal of unsafe configuration and bypassed validation. Push and pull-request CI run the same checks. These packaging checks do not certify signed-in workflows or live service behavior.
+
+### Maintainers
 
 The root `gemini-extension.json` is the complete integration. The extension's
 version is independent of the remote MCP server version. Validate installation
@@ -122,3 +136,7 @@ Google's [extension gallery](https://geminicli.com/extensions/) discovers public
 GitHub repositories with the `gemini-cli-extension` topic and a root manifest.
 Google documents a daily crawl; publication here does not establish gallery
 inclusion or endorsement. See the [release requirements](https://geminicli.com/docs/extensions/releasing/#list-your-extension-in-the-gallery).
+
+## Links
+
+Support: support@koskamo.com · [Privacy](https://koskamo.com/privacy) · [Terms](https://koskamo.com/terms)

@@ -1,6 +1,6 @@
 {
   "name": "koskamo",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Discover MCP servers and packages with cited capabilities, provenance, and reference facts.",
   "mcpServers": {
     "koskamo": {
