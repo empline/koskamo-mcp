@@ -74,19 +74,12 @@ score ranks matches and is not a measure of factual confidence.
 | `koskamo_search_passages` | Retrieve passages with citations and document versions. |
 | `koskamo_get_history` | Inspect public document version history. |
 | `koskamo_list_revisions` | Inspect dataset revisions, subject to the server's access checks. |
-| `koskamo_report_fact` | Submit a disputed passage to Koskamo's review queue. |
-| `koskamo_register_mcp_server` | Register a server you operate using ownership proof. |
 
-Reporting a fact and registering a server submit data to Koskamo. Use those tools
-only when you intend to make that submission. The extension does not configure
-automatic tool approval. Contributor-only revision proposals and decisions are
-outside this public integration.
-
-The manifest also includes the current public endpoint's capability, connection,
-operation, protocol-support, and owner-maintenance tools. Owner changes require
-the verified listing's scoped owner key and the server's current authorization
-checks. Listing a tool does not grant ownership or authorize a change. Private
-profiles, contributor endpoints, and gateway tools are outside this extension.
+The reviewed manifest includes 22 public tools from this endpoint. Fact reports,
+server registration, issue management and owner-key operations use the separate
+`https://koskamo.com/api/mcp/owner` surface and are outside this connector.
+Private profiles, contributor endpoints and gateway tools are also outside it.
+The extension does not configure automatic tool approval.
 
 Tool arguments are sent to Koskamo over HTTPS. Avoid sending secrets or private
 content to this public service. See [Privacy](https://koskamo.com/privacy),
