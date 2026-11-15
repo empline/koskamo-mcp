@@ -3,15 +3,23 @@
   "sourceRepository": "https://github.com/empline/koskamo",
   "sourceDirectory": "integrations/mcp",
   "manifestSource": "integrations/gemini/gemini-extension.json",
-  "sourceSha256": "c172c4c4e0381d70105241658477b18daa23badaaff862cd5f02b9a2d6b005a5",
-  "toolingSha256": "62f79bf45fea352b5b30993538707b2ef4cb756d5b495b2980afa136c0c06016",
+  "sourceSha256": "5c7a53d1ef6e1ec24383a22a3749c82935dc57fe8ac5102adbebe04cfdeff86d",
+  "toolingSha256": "984d914ff4bc84c24fd88a3d106ab3f0ab20d4be4886d6ce0d07e55f237e9e01",
   "files": {
+    ".githooks/commit-msg": {
+      "sha256": "f82321fc6a4e76f639b90d076439963321be8a06ea0b1744e469cd66f3acff0f",
+      "mode": 33261
+    },
     ".githooks/pre-commit": {
       "sha256": "35ceec1f1305ff1e2837d603f8b7b69b175456ee1b4ba93c16d6bb465a8a3962",
       "mode": 33261
     },
     ".githooks/pre-push": {
       "sha256": "1b53a94f04b3d62f31323c90cb88b2c2a94bd159b6033eacf18829577da0cd7c",
+      "mode": 33261
+    },
+    ".githooks/prepare-commit-msg": {
+      "sha256": "f82321fc6a4e76f639b90d076439963321be8a06ea0b1744e469cd66f3acff0f",
       "mode": 33261
     },
     ".gitignore": {
@@ -39,7 +47,7 @@
       "mode": 33188
     },
     "gemini-extension.json": {
-      "sha256": "897231e38c9c8c4776104329669db25879d3a2e225074477d3b632a112190c9a",
+      "sha256": "57acc4ed25b56d1761dd81859b6350e2f2cf5598f484b750bc056ffc63272b3f",
       "mode": 33188
     },
     "llms-install.md": {
@@ -47,27 +55,35 @@
       "mode": 33188
     },
     "package-lock.json": {
-      "sha256": "c7eda951e32f5dbc5bc1cc545701951589c9a2edfcb5b1b1c2dc0f35b9faddd5",
+      "sha256": "053dc0fd53f648a2d016f2190b11622572ea552c22b854113ba63b2fc477eba6",
       "mode": 33188
     },
     "package.json": {
-      "sha256": "1464ac708d3317a809240aa5ba4c1b4f0cde820141a9d3ba9ebb87677d0c99dd",
+      "sha256": "012f3cd9788d580e785d11f6c4632766fb7ed5366a5d347bd2e4e00f6cdf2996",
       "mode": 33188
     },
     "scripts/contract.mjs": {
-      "sha256": "ce37d3e94d7990835d6f11e5d12f52108c8aeaf30a674e8c4102552ae8abeca6",
+      "sha256": "f1105fea22b0af8f6c6d56cbb7bf9ae46a63c565a18895f3075f22ec81512e69",
+      "mode": 33188
+    },
+    "scripts/git-attribution.cjs": {
+      "sha256": "59f4e5078cabc8f5ce0daec37bee7cf65c597021fe45b0b8ede264560a2979bf",
       "mode": 33188
     },
     "scripts/install-hooks.mjs": {
       "sha256": "72b9eb3417859228f212e71bf963498b8363eda6f26aba79771afee4cc351c7b",
       "mode": 33188
     },
+    "scripts/validate-attribution.cjs": {
+      "sha256": "41da62d9df445da990ff777b6cd8108bdf565d87867c9eabe8b39eb9d2e7a67f",
+      "mode": 33188
+    },
     "scripts/validate.mjs": {
-      "sha256": "efcfcd73affec91628fba89758ae874e7cf93981037ed94ac4ac912d696caf9a",
+      "sha256": "3a5e8f4cfec9f28336bca6c4027f90c70817bffb6ed14fadb54900035b80b6ac",
       "mode": 33188
     },
     "tests/contract.test.mjs": {
-      "sha256": "9815d1d20e306b2605459a68847bb50c5da7a43288a5910c4d5518de0e7ca9e1",
+      "sha256": "e9ee594792cd887b34060f19c1640321e4abe7313ef19cc5b91c17c307abb320",
       "mode": 33188
     }
   }
